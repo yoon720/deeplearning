@@ -15,26 +15,3 @@ This experiment is a simplified version of experiment in section 4.1. The author
 
 The result of EXP1, EXP2 is shown in Table 1. I also added a graph of each networks’ training steps in ‘result.ipynb’ file.
 
-
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
-
-
-
-
-
-| Config | VGG Net (paper) | Larger conv. net | 
-|--------|Best val acc|	Test acc|	#params (M)|	Best val acc|	Test acc|	#params|
-|--------|----------|----------|----------|----------|----------|----------|
-A	0.7947	0.7926	9.75	0.7786	0.7771	11.26
-B	0.8232	0.8206	9.94	0.7881	0.7823	11.39
-C	0.8246	0.8216	10.53	0.7855	0.7831	11.98
-D	0.8247	0.8224	15.25	0.7714	0.7707	21.61
-E	0.8281	0.8231	20.55	0.7718	0.7741	35.25
