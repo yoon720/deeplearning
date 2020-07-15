@@ -5,24 +5,10 @@ This paper proposes Wasserstein GAN which uses Wasserstein distance (or its esti
 ## Experiment 1. Meaningful loss metric
 In section 4.2, the paper illustrates how the loss correlates well with the quality of the generated sample. I confirmed the statement using DCGAN structure. In Figure 1, we can see the training curve and generated samples from some iterations. As training progresses, the Wasserstein estimate decreases and the quality of samples are getting better. The curve has some noise because I did not used a median filter as the authors did, but it still shows same tendency. Although I took only 4 samples out of 64 samples from each iteration due to the lack of the space, the whole samples from some iterations are included in submission file.
 
-<table>
-  <tr>
-    <td> ![DCGAN](https://user-images.githubusercontent.com/52485688/87549268-956ecb80-c6e8-11ea-920b-4e541bc0c365.png) </td>
-    <td>![figure1](https://user-images.githubusercontent.com/52485688/87549272-97388f00-c6e8-11ea-8033-1be12ca2ffe2.png)</td>
-  </tr>
-  <tr>
-    <td colspan="2">Figure 1. Training curve and samples at different stages of training. As the training progresses, the quality of samples is improved and the curve goes down. Therefore, we can see that the curve shows correlation between lower error and better sample quality.</td>
-  </tr>
-</table>
-
-
 |![DCGAN](https://user-images.githubusercontent.com/52485688/87549268-956ecb80-c6e8-11ea-920b-4e541bc0c365.png)|![figure1](https://user-images.githubusercontent.com/52485688/87549272-97388f00-c6e8-11ea-8033-1be12ca2ffe2.png)|
-|---|---|
-|Figure 1. Training curve and samples at different stages of training. As the training progresses, the quality of samples is improved and the curve goes down. Therefore, we can see that the curve shows correlation between lower error and better sample quality. ||
- 
-| Header ||
-|--------------|
-| 0 | 1 | 
+
+Figure 1. Training curve and samples at different stages of training. As the training progresses, the quality of samples is improved and the curve goes down. Therefore, we can see that the curve shows correlation between lower error and better sample quality.
+
 
 ## Experiment 2. Improved stability
 In section 4.3, the paper shows the model’s improved stability using DCGAN generator without batch normalization (DCGAN-BN), and a 4-layer ReLU-MLP (MLP-4). DCGAN-BN produced plausible fake images and showed decreasing Wasserstein estimate curve. MLP-4, on the other hand, was not trained well but somehow generated some bedroom-like images. Therefore, I implemented 5-layer ReLU-MLP (MLP-5) additionally to test whether MLP generator can be trained with WGAN method or not. The result shows MLP generator can be trained with WGAN method.
