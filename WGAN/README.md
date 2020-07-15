@@ -7,7 +7,7 @@ In section 4.2, the paper illustrates how the loss correlates well with the qual
 
 <table>
   <tr>
-    <td>![DCGAN](https://user-images.githubusercontent.com/52485688/87549268-956ecb80-c6e8-11ea-920b-4e541bc0c365.png)</td>
+    <td> ![DCGAN](https://user-images.githubusercontent.com/52485688/87549268-956ecb80-c6e8-11ea-920b-4e541bc0c365.png) </td>
     <td>![figure1](https://user-images.githubusercontent.com/52485688/87549272-97388f00-c6e8-11ea-8033-1be12ca2ffe2.png)</td>
   </tr>
   <tr>
