@@ -8,6 +8,13 @@ In this paper, the authors proposed a light weight deep neural network using dep
 Experiment 1 is for the demonstration of the key concept of this paper. I used CIFAR10 dataset for this experiment. Therefore I slightly changed the average pooling layer because the size of the image in CIFAR10 is 32x32. (avgpool(7) -> avgpool(1)) I followed the configurations in the paper for the other layers. 
 The result of the experiment is summarized in the Table 1. MobileNet only reduces test accuracy by 1.35% while it needs much less computations, parameters and time than Conv MobileNet. Between Narrow MobileNet and shallow MobileNet, the first one showed better performance even though it needs less computations and parameters. More detailed results can be found in ‘Experiment1-CIFAR10.ipynb’ in my submission file. 
 
+|Model|	Val. acc|	Test acc|	Comp cost|	# Param|	Train time|
+|-----|-----|-----|-----|-----|-----|
+|Conv MobileNet|	74.04|	73.42|	166|	30.6|	24m 23s|
+|MobileNet|	73.25|	72.77|	19.0|	3.45|	9m 13s|
+|-----|-----|-----|-----|-----|-----|
+|0.75 MobileNet|	71.92|	71.60|	10.8|	1.95|	9m 3s|
+|Shallow MobileNet|	71.44|	70.38|	13.6|	2.12|	9m 14s|
 
 Table 1. The result of Experiment 1. MobileNet reduces accuracy slightly, but needs much less computation, parameters, time. The unit of computational cost (Comp cost) and the number of parameters (# Param) is a million, and I used the equation in the paper to compute the computational cost.
 
