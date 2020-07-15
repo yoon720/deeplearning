@@ -17,24 +17,8 @@ Experiment 2 is about two model shrinking hyperparameters, width multiplier (α)
 The result of the experiment is summarized in the Table 2 and 3. The overall accuracy is much lower than experiment 1 because of the lack of the training data. However, we can see the same tendency with the paper. In Table 2, accuracy drops off smoothly between 1 and 0.75, but it drops fast at 0.5 and 0.25 which means the architecture is too small. In Table 3, accuracy drops off by 4.47% and 2.81% as ρ goes smaller. From them, we can see the accuracy, computation and size trade-offs of each multiplier. More detailed results can be found in ‘Experiment2-STL10.ipynb’ in my submission file.
 
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
+Table 2. The result of Experiment 2 with width multiplier. Resolution multiplier is set to 1 for all experiment. The unit of Comp cost and # Param is same with Tabel 1.
 
 
-
-<div class="pull-left">
-    Table 2. The result of Experiment 2 with width multiplier. Resolution multiplier is set to 1 for all experiment. The unit of Comp cost and # Param is same with Tabel 1.
-</div>
-<div class="pull-right">
-    Table 3. The result of Experiment 2 with resolution multiplier. Width multiplier is set to 1 for all experiment. The unit of Comp cost and # Param is same with Tabel 1.
-</div>
+Table 3. The result of Experiment 2 with resolution multiplier. Width multiplier is set to 1 for all experiment. The unit of Comp cost and # Param is same with Tabel 1.
 
