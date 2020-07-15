@@ -17,5 +17,6 @@ Figure 2. Successful examples of cityscapes translations between labels and phot
 
 CycleGAN is an interesting approach of GAN. However, it is not stable because the model uses too small batch size and buffer together. Also, we need to train one generator and one discriminator for one translation task. This is not efficient in terms of memory management. 
 
-[1] https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/datasets.md\\
+[1] https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/datasets.md
+
 [2] A. Shrivastava, T. Pfister, O. Tuzel, J. Susskind, W. Wang, and R. Webb. Learning from simulated and unsupervised images through adversarial training. In CVPR, 2017.
