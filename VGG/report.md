@@ -7,10 +7,18 @@ For the experiments, I implemented the same Conv. layer configurations in the pa
 3.	Fully-connected layer size : (25088, 4096), (4096, 4096), (4096, 1000) -> (512, 512), (512, 10)
 4.	Weight initialization variance : 0.01 -> 0.035
 
-### Experiment 1. Stack of small layers vs One large layer
+## Experiment 1. Stack of small layers vs One large layer
 In section 2.3, the authors mentioned we have some benefits by using a stack of 3×3 conv. layers instead of a single larger layer. To demonstrate this, I compared the performance of each configuration with equivalent large conv. network by replacing a stack of two 3x3 conv. to a 5x5 conv., and a stack of three 3x3 conv. to a 7x7 conv. The result shows VGG networks achieved better validation and test accuracy than each corresponding Larger conv. network. The result shows VGG outperforms larger conv. net in all case.
 
-###Experiment 2. Depth of Convolution layer
+## Experiment 2. Depth of Convolution layer
 This experiment is a simplified version of experiment in section 4.1. The authors says deeper network can capture more features from image, and so it performs well. To capture the key concept, I implemented some experiments which are related to effect of depth. The result shows the deeper the net, the better the accuracy. We can check the additional non-linearity does help (C is better than B), and it is important to capture spatial context by using conv. filters with non-trivial receptive fields (D is better than C).
 
 The result of EXP1, EXP2 is shown in Table 1. I also added a graph of each networks’ training steps in ‘result.ipynb’ file.
+| Config | VGG Net (paper) | Larger conv. net | 
+|--------|Best val acc|	Test acc|	#params (M)|	Best val acc|	Test acc|	#params|
+|--------|----------|----------|----------|----------|----------|----------|
+A	0.7947	0.7926	9.75	0.7786	0.7771	11.26
+B	0.8232	0.8206	9.94	0.7881	0.7823	11.39
+C	0.8246	0.8216	10.53	0.7855	0.7831	11.98
+D	0.8247	0.8224	15.25	0.7714	0.7707	21.61
+E	0.8281	0.8231	20.55	0.7718	0.7741	35.25
