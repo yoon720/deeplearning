@@ -20,7 +20,10 @@ In section 4.2, the paper illustrates how the loss correlates well with the qual
 |---|---|
 |Figure 1. Training curve and samples at different stages of training. As the training progresses, the quality of samples is improved and the curve goes down. Therefore, we can see that the curve shows correlation between lower error and better sample quality. ||
  
- 
+| Header ||
+|--------------|
+| 0 | 1 | 
+
 ## Experiment 2. Improved stability
 In section 4.3, the paper shows the model’s improved stability using DCGAN generator without batch normalization (DCGAN-BN), and a 4-layer ReLU-MLP (MLP-4). DCGAN-BN produced plausible fake images and showed decreasing Wasserstein estimate curve. MLP-4, on the other hand, was not trained well but somehow generated some bedroom-like images. Therefore, I implemented 5-layer ReLU-MLP (MLP-5) additionally to test whether MLP generator can be trained with WGAN method or not. The result shows MLP generator can be trained with WGAN method.
 Each model was trained for 600,000 generator iterations same as experiment 1. Training curve and samples of each models are included in 'plot.ipynb' From the training curve of DCGAN-BN, MLP-4 and MLP-5, we can see that the DCGAN with Batch Normalization shows best performance. 
