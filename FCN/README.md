@@ -6,8 +6,11 @@ Therefore, I reproduced two experiments (Table1, Table2) from the paper to show 
 ## Experiment 1. From classifier to dense FCN (Sec 4.1, Table 1)
 In the first experiment, the authors convolutionize three proven classifiers, which are AlexNet, VGG16, GoogLeNet. I used pretrained model from pytorch to initialize each FCN and trained for 200 epochs because the paper says networks need at least 175 epochs to converge. In the paper, the FCN-VGG16 shows the best performance, and FCN-AlexNet follows. However, I got the best performance with FCN-AlexNet. The figures and table shows the result, and more detailed result and visualization can be found in ‘Exp1-result.ipynb’ 
 
-![fig1](https://user-images.githubusercontent.com/52485688/87548598-b1be3880-c6e7-11ea-80a0-0ec7b08404e3.png)
-![fig2](https://user-images.githubusercontent.com/52485688/87548604-b387fc00-c6e7-11ea-832b-63f8485d1c1e.png)
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![fig1](https://user-images.githubusercontent.com/52485688/87548598-b1be3880-c6e7-11ea-80a0-0ec7b08404e3.png)  |  ![fig2](https://user-images.githubusercontent.com/52485688/87548604-b387fc00-c6e7-11ea-832b-63f8485d1c1e.png)
+
+
 
 |-|	Alex|	VGG|	GoogLe|
 |:----:|:----:|:----:|:----:|
