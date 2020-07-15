@@ -14,4 +14,7 @@ In section 2.3, the authors mentioned we have some benefits by using a stack of 
 This experiment is a simplified version of experiment in section 4.1. The authors says deeper network can capture more features from image, and so it performs well. To capture the key concept, I implemented some experiments which are related to effect of depth. The result shows the deeper the net, the better the accuracy. We can check the additional non-linearity does help (C is better than B), and it is important to capture spatial context by using conv. filters with non-trivial receptive fields (D is better than C).
 
 The result of EXP1, EXP2 is shown in Table 1. I also added a graph of each networks’ training steps in ‘result.ipynb’ file.
+![table](https://user-images.githubusercontent.com/52485688/87546064-e6c88c00-c6e3-11ea-87f8-24b2140cc29e.PNG)
+Table 1. Combined result of EXP1 and EXP 2. You can compare the VGG net and Larger conv. net from the row of the table (EXP1), and you can see the effect of depth to VGG nets from the left column of the table (EXP2).
+
 
