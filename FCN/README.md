@@ -18,6 +18,8 @@ Figure 1. Validation loss | Figure 2. Validation mean IU
 |Param|	57M|	134M|	6M|
 |Max stride|	32|	32|	32|
 
+Table 1. Classifier to dense FCN
+
 
 ## Experiment 2. Combining what and where (sec 4.2, Table 2)
 In the second experiment, the authors suggest networks that learn to combine coarse, high layer information with fine, low layer information. FCN-32s is same as FCN-VGG16 in experiment 1 and FCN-16s, FCN-8s are skip architectures of FCN-32s. They are initialized with best FCN-32s model as the paper describes. I trained FCN-32s and FCN-16s for 200 epoch, but FCN-8s for 180 epochs due to lack of time. Metrics and segmentation results are as follows. Although I initialized with best FCN-32s, FCN-16 and FCN-8 showed worse performance than FCN-32s. I think this is because of the initialization of new layers were bad. The figures and table shows the result, and more detailed result and visualization can be found in ‘Exp2-result.ipynb’ 
@@ -26,11 +28,13 @@ In the second experiment, the authors suggest networks that learn to combine coa
 
 Figure 3. Segmentation result
 
+
 |-|	pixel acc.|	mean acc.|	mean IU|	f. w. IU|
 |:----:|:----:|:----:|:----:|:----:|
 |32s|	94.90|	85.82|	72.61|	82.92|
 |16s|	94.24|	84.55|	71.10|	82.04|
 |8s|	93.81|	83.65|	70.06|	81.40|
 
+Table 2. Comparison of skip FCNs
 
 By convolutionizing the fully-connected layers of classifier, we can extend the classification nets to segmentation. Also, we can improve the architecture with multi-resolution layer combinations.
