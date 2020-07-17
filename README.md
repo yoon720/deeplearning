@@ -1,5 +1,6 @@
 # deeplearning
-pytorch implementation of deep learning papers
+PyTorch implementation of deep learning papers
+Detailed explanations about implementation and experiments are in each directory
 
 1. Very Deep Convolutional Networsk for Large-scale image recognition (VGGNet)
 2. MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications
