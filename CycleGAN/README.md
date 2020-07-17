@@ -22,6 +22,6 @@ CycleGAN is an interesting approach of GAN. However, it is not stable because th
 
 
 
-[1] https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/datasets.md
-
+### references
+[1] https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/datasets.md \\
 [2] A. Shrivastava, T. Pfister, O. Tuzel, J. Susskind, W. Wang, and R. Webb. Learning from simulated and unsupervised images through adversarial training. In CVPR, 2017.
